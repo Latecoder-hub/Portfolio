@@ -1,0 +1,207 @@
+body{
+    background-color: #082032;
+}
+.navigation{
+    position: fixed;
+    z-index: 1;
+    display: block;
+    top: 0;
+  }
+ button{
+    position: fixed;
+    top: 1em;
+    right: 2em;
+    z-index: 2;
+    font-size: large;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    visibility:hidden;
+    
+  }
+  .hamburger {
+    margin-top: 2em;
+    visibility: visible;
+    z-index: 1;
+    width: 60px;
+    height: 50px;
+    
+  }
+  .hamburger >div{
+    z-index: 1;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #EEEEEE;
+    transition: all 0.4s ease;
+    padding: 0.5px;
+    border-radius: 2px;
+  }
+  .hamburger>div:nth-child(1){ 
+    top: 0px;
+  }
+  
+  .hamburger>div:nth-child(2){
+   
+    top: 10px;
+  }
+  .hamburger>div:nth-child(3){
+   
+    top: 20px;
+  }
+  .div1Turn{
+    transform: rotate(-28deg);
+    width: 90%;
+    height: 3px;
+    border-radius: 1px; 
+  }
+ .div2Turn{
+    transform: rotate(90deg) translateY(-25px) ;
+    width: 90%;
+    height: 3px;
+    border-radius: 1px; 
+  }
+  .div3Turn{
+    transform: rotate(28deg);
+    width: 90%;
+    height: 3px;
+    border-radius: 1px;
+  }
+  #menu {
+    width: 0%;
+    height: 4em;
+    position: fixed;
+    list-style-type: none;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #393E46 ;
+    z-index: 1; 
+    transition: 0.5s linear;
+    overflow: hidden;
+    right: 0;
+    padding: 3em 0em 1em 0em;
+    
+  }
+  #menu>a{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.3s;
+    font-style: normal;
+    text-decoration: none;
+    color: #EEEEEE;
+    padding: 0em 4em 0em 4em;
+    font-size: 2em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  #menu>a:hover{
+      color:#FF4C29 ;
+  }
+  .vmenu{
+      width: 100% !important;
+  }
+main{
+   
+    width: 100%;
+   text-align: center;
+    display: block;
+    color: brown;
+    height: auto;
+    font-size: 6em;
+    position:relative;
+    margin-top: 12vw;
+      
+}
+
+
+
+
+
+
+  /* dot pulse*/
+  .dot-pulse {
+    position: relative;
+    left: -9999px;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    background-color: #9880ff;
+    color: #9880ff;
+    box-shadow: 9999px 0 0 -5px #9880ff;
+    animation: dotPulse 1.5s infinite linear;
+    animation-delay: .25s;
+    margin: 2em;display: inline-block;
+  }
+  
+  .dot-pulse::before, .dot-pulse::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    background-color: #9880ff;
+    color: #9880ff;
+  }
+  
+  .dot-pulse::before {
+    box-shadow: 9984px 0 0 --0.5em #9880ff;
+    animation: dotPulseBefore 1.5s infinite linear;
+    animation-delay: 0s;
+    
+  }
+  
+  .dot-pulse::after {
+    box-shadow: 10014px 0 0 -0.5em #9880ff;
+    animation: dotPulseAfter 1.5s infinite linear;
+    animation-delay: .5s;
+    margin-right: 10em;
+    
+  }
+  
+  @keyframes dotPulseBefore {
+    0% {
+      box-shadow: 9984px 0 0 -0.5em #9880ff;
+    }
+    30% {
+      box-shadow: 9984px 0 0 0.2em #9880ff;
+    }
+    60%,
+    100% {
+      box-shadow: 9984px 0 0 -0.5em #9880ff;
+    }
+  }
+  
+  @keyframes dotPulse {
+    0% {
+      box-shadow: 9999px 0 0 -0.5em #9880ff;
+    }
+    30% {
+      box-shadow: 9999px 0 0 0.2em #9880ff;
+    }
+    60%,
+    100% {
+      box-shadow: 9999px 0 0 -0.5em #9880ff;
+    }
+  }
+  
+  @keyframes dotPulseAfter {
+    0% {
+      box-shadow: 10014px 0 0 -0.5em #9880ff;
+    }
+    30% {
+      box-shadow: 10014px 0 0 0.2em #9880ff;
+    }
+    60%,
+    100% {
+      box-shadow: 10014px 0 0 -0.5em #9880ff;
+    }
+  }
+  
+
+  
+  
+  
