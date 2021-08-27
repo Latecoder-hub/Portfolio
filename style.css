@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 body{
     background-color: #f5f0e1;
-    overflow: hidden;
+    
     font-family: 'Permanent Marker', cursive;
 }
 .navigation{
@@ -128,7 +128,7 @@ main{
       
 }
 
-main img{
+main>div>img{
     float: left;
     margin-left: 1em;
     border-radius: 25em;
@@ -146,7 +146,8 @@ main img{
     margin-top: 0.5em;
 }
 footer{
-      
+    
+    display: block;
      left: 0;
      bottom: 0;
      width: 100%;
@@ -158,10 +159,12 @@ footer{
     text-align: center;
     font-family: 'Rampart One', cursive;
     
+    
 }
 
 footer>a{
     margin: 2em;
+    
 }
 
 /*Dot-Animtation*/
@@ -213,12 +216,48 @@ footer>a{
     animation-delay:1.2s;
   }
   
-
-
-
-
-
+/* about.html */
+  article{
+    font-size: 20px;
+    margin: auto 50px auto 50px;
+  
+  }
  
-  
-  
+  .about-main>img{
+    margin: auto 50px auto 50px;
+    
+  }
+  .about-main{ 
+    display: flex;
+    width: 100%;
+    padding: auto 50px auto 50px;
+    
+  }
+  article:last-child{
+    color:#993618 ;
+  }
+  article p>a{
+    text-decoration: none;
+    color:#1e3d59 ;
+  }
+  /*Temp attiributes*/
+  a[href*="chagatai"]::after {display:inline-block; width:16px; height:16px; position:relative; content:""; background:url("browser.png") no-repeat 0 0; background-size:100%; }
+  .Tips-main a[href*="html"]::after {display:inline-block; width:16px; height:16px; position:relative; content:""; background:url("browser.png") no-repeat 0 0; background-size:100%; }
+   a[href*="http"]::after {display:inline-block; width:16px; height:16px; position:relative; content:""; background:url("browser.png") no-repeat 0 0; background-size:100%; }
+   a[href*="jpg"]::after {display:inline-block; width:16px; height:16px; position:relative; content:""; background:url("intmark.png") no-repeat 0 0; background-size:100%; }
+   
+  .projects-main div a, .CCSF-main div a {
+      text-decoration: none ;
+      color: #993618;
+      
+      
+  }
+  .projects-main div, .CCSF-main div {
+    margin-top: 0.1em;
+    width:10em;
+    background-color:#1e3d59 ;
+  }
+  .projects-main div a:hover, .CCSF-main div a:hover{
+    color: #ffc13b;
+  }
   

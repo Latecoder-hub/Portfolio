@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Front End, Back End, FullStack, Web development, html, css
+    ,Javascript">
+    <meta name="author" content="Cagatay Ersoy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips and Tricks</title>
+    <meta name="description" content="Tips and tricks learned in Advanced HTML and CSS course at City College of San Francisco">
+    <link rel="stylesheet" href="../../../style.css">
+    
+</head>
+<body>
+    
+    <nav class="navigation"> 
+        <button onclick="chancestyle()">
+            <div class="hamburger">  
+                <div id="div1" class="hamburgerToTriangle"></div>
+                <div id="div2" class="hamburgerToTriangle"></div>
+                <div id="div3" class="hamburgerToTriangle"></div>  
+            </div>
+        </button>
+        <div id="menu">
+            <a href="../../../index.html">Home</a>
+            <a href="../../../about.html">About</a>
+            <a href="../../projects-index.html">Projects</a>
+            <a href="../../../contact.html">Contact</a>
+        </div>
+   </nav>       
+    <main class="Tips-main">
+        
+        <article>
+            <h2>Optimizing Images for the Web</h2>
+            <p>Image optimization is a process of saving and delivering images in the smallest possible file size without reducing the overall image quality.</p>
+            <p>While the process sounds complex, it’s actually quite easy these days. You can use one of the many image optimization plugins and tools to automatically compress images by up to 80% without any visible loss in image quality.</p>
+            <p>I used squoosh tool for optimizing my image in my <a href="../index.html" target="blank">home page </a> and <a href="../about.html" target="blank">about page</a> Here’s an example of <a href="me-resized.jpg" target="blank">optimized</a> and <a href="me-orginal.jpg" target="blank">unoptimized</a> image. You can use other tools like <a href="http://jpeg-optimizer.com/" target="blank">jpeg-optimizer</a> or <a href="https://www.gimp.org/" target="blank">gimp</a></p>
+        
+        </article>
+        
+        
+        
+        
+    </main>
+    <footer>
+        <p >Follow me on</p>
+        <a href="https://github.com/Latecoder-hub" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjM1LjMxOHB4IiBoZWlnaHQ9IjM1LjMxOHB4IiB2aWV3Qm94PSIwIDAgMzUuMzE4IDM1LjMxOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzUuMzE4IDM1LjMxODsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZD0iTTIzLjcxLDM0LjY4OWMtMC4xNzIsMC4wNjItMC4zNDUsMC4xMzctMC41MjIsMC4xNjhjLTAuNjc4LDAuMTIxLTEuMTEyLTAuMjI5LTEuMTE2LTAuOTIyDQoJCWMtMC4wMDktMS4yODctMC4wMDktMi41NzIsMC4wMTItMy44NTljMC4wMjItMS40OC0wLjAxMi0yLjk0MS0xLjEzOS00LjE2MmMwLjY3LTAuMTIsMS4yNjYtMC4yMDQsMS44NDktMC4zMzgNCgkJYzMuODYyLTAuODg3LDUuODY4LTMuMzIzLDYuMTI0LTcuMzY2YzAuMTMxLTIuMDU4LTAuMjM2LTMuOTQ2LTEuNjA0LTUuNTY3Yy0wLjA5OS0wLjExNC0wLjEwNC0wLjM3My0wLjA1Ny0wLjUzOQ0KCQljMC4zNjQtMS4zNCwwLjI1OC0yLjY0OS0wLjE2Ni0zLjk1OWMtMC4xMDUtMC4zMjctMC4yNzktMC40MjgtMC42MDItMC40MDdjLTEuMTM0LDAuMDYzLTIuMTczLDAuNDYxLTMuMDg5LDEuMDczDQoJCWMtMC44ODMsMC41OTMtMS43MDUsMC43MjItMi43NTQsMC40ODJjLTIuMzEtMC41MjEtNC42MzUtMC4zNjktNi45NCwwLjE2NWMtMC4yNjEsMC4wNjItMC42MTItMC4wMjEtMC44NTEtMC4xNjENCgkJYy0xLjA4Mi0wLjYzNC0yLjE2NC0xLjI1LTMuNDEyLTEuNDk2Yy0wLjk2NS0wLjE4OC0xLjA0OS0wLjE0LTEuMzA1LDAuNzkzQzcuODE2LDkuNzcsNy43ODQsMTAuOTQ3LDguMTEzLDEyLjEzDQoJCWMwLjA0NywwLjE3Mi0wLjAwMiwwLjQ0OC0wLjExNywwLjU3NWMtMi41NTcsMi44NTMtMS42MzEsOC4yNDQsMC4wOTIsMTAuMzA5YzEuMzQsMS42MDQsMy4xMiwyLjMyNiw1LjA5NiwyLjcwMQ0KCQljMC4zNDUsMC4wNjQsMC42ODgsMC4xMTMsMS4wMzMsMC4xNzNjLTAuMjk2LDAuNzctMC41NjIsMS40OTctMC44NjMsMi4yMTJjLTAuMDU5LDAuMTM4LTAuMjQ2LDAuMjU0LTAuMzk5LDAuMzEyDQoJCWMtMS45MzgsMC43NTItMy42MDQsMC4xOTktNC43MTMtMS41NmMtMC41OTMtMC45MzgtMS4zNTQtMS42MzktMi40ODgtMS44NDJjLTAuMDM2LTAuMDA3LTAuMDczLTAuMDI2LTAuMTA2LTAuMDIxDQoJCWMtMC4zMDUsMC4wOC0wLjYwNywwLjE2NC0wLjkxMSwwLjI0NmMwLjE3MSwwLjIzOCwwLjI5MiwwLjU1OCwwLjUyMSwwLjcwMWMwLjk2MSwwLjYwOCwxLjU4NiwxLjQ3NSwxLjk5OSwyLjQ5OA0KCQljMC42NDksMS42MDQsMS45MDksMi4zMTksMy41NDYsMi40NTljMC43OTksMC4wNjUsMS42MDYsMC4wMSwyLjQ4MSwwLjAxYzAsMC45OTYsMC4wMzYsMi4xMzMtMC4wMTUsMy4yNjUNCgkJYy0wLjAyNiwwLjYxLTAuNjM5LDAuODU0LTEuMzczLDAuNjA0Yy0xLjk0Ny0wLjY2Ni0zLjc1Mi0xLjYyMS01LjMxMS0yLjk2M0MwLjk1NiwyNi45Ni0xLjIxNCwyMC44MywwLjY1NywxMy42NTUNCgkJQzIuNTIyLDYuNTAzLDcuMzgzLDIuMTE2LDE0LjY1MSwwLjczOUMyNC43MDgtMS4xNjMsMzQuMjM1LDYuMTYxLDM1LjIzMywxNi4zN0MzNi4wMjEsMjQuNDE4LDMxLjI4NCwzMS45NDksMjMuNzEsMzQuNjg5eg0KCQkgTTE0LjIyOSwyNS44NWMtMC4wMDYsMC4wMTQtMC4wMSwwLjAyNC0wLjAxNiwwLjAzOGMwLjAxOCwwLjAwMywwLjAzNiwwLjAwNiwwLjA1NSwwLjAwOQ0KCQlDMTQuMjgyLDI1Ljg5OCwxNC4yOTQsMjUuOTIzLDE0LjIyOSwyNS44NXogTTkuNjc5LDI5LjAzMWMwLjE1NywwLjA5NywwLjMwNywwLjIyLDAuNDc3LDAuMjczYzAuMDYyLDAuMDIsMC4xNzctMC4xMjEsMC4zOC0wLjI3MQ0KCQljLTAuMjgyLTAuMTA3LTAuNDQ4LTAuMjAxLTAuNjIzLTAuMjI1QzkuODQ1LDI4LjgsOS43NTcsMjguOTUzLDkuNjc5LDI5LjAzMXogTTExLjExMiwyOS4yNzdjMC4wMjMsMC4xMDUsMC4yMzIsMC4yMzYsMC4zNTUsMC4yMzQNCgkJYzAuMTE5LTAuMDAyLDAuMjM1LTAuMTYsMC4zNTQtMC4yNWMtMC4xMDgtMC4wOTktMC4yMTYtMC4xOTUtMC41NDgtMC40OTRDMTEuMjAxLDI4Ljk3NSwxMS4wODIsMjkuMTQzLDExLjExMiwyOS4yNzd6DQoJCSBNMTIuODcsMjguODU0Yy0wLjE0OCwwLjAzNS0wLjI3MywwLjE3Mi0wLjQwOCwwLjI2NmMwLjA3OSwwLjEsMC4xNTgsMC4xOTMsMC4yODUsMC4zNWMwLjE3NS0wLjE2LDAuMjk0LTAuMjcxLDAuNDE0LTAuMzc5DQoJCUMxMy4wNjEsMjkuMDA0LDEyLjk0NCwyOC44MzYsMTIuODcsMjguODU0eiBNOC41MTIsMjguMjYxYzAuMDgyLDAuMTU1LDAuMjA5LDAuMjg5LDAuMzgxLDAuNTA4DQoJCWMwLjExNS0wLjE4OCwwLjI0LTAuMzMyLDAuMjE4LTAuMzYxYy0wLjEwOS0wLjE0My0wLjI1Ny0wLjI2LTAuNDAzLTAuMzY3QzguNjk4LDI4LjAzMyw4LjQ5NSwyOC4yMjcsOC41MTIsMjguMjYxeiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" height="40px" width="40px" alt="Logo1" /></a>
+        <a href="https://www.linkedin.com/in/%C3%A7a%C4%9Fatay-ersoy-10a2269a/" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDM4MiAzODIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4MiAzODI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIHN0eWxlPSJmaWxsOiMwMDc3Qjc7IiBkPSJNMzQ3LjQ0NSwwSDM0LjU1NUMxNS40NzEsMCwwLDE1LjQ3MSwwLDM0LjU1NXYzMTIuODg5QzAsMzY2LjUyOSwxNS40NzEsMzgyLDM0LjU1NSwzODJoMzEyLjg4OQ0KCUMzNjYuNTI5LDM4MiwzODIsMzY2LjUyOSwzODIsMzQ3LjQ0NFYzNC41NTVDMzgyLDE1LjQ3MSwzNjYuNTI5LDAsMzQ3LjQ0NSwweiBNMTE4LjIwNywzMjkuODQ0YzAsNS41NTQtNC41MDIsMTAuMDU2LTEwLjA1NiwxMC4wNTYNCglINjUuMzQ1Yy01LjU1NCwwLTEwLjA1Ni00LjUwMi0xMC4wNTYtMTAuMDU2VjE1MC40MDNjMC01LjU1NCw0LjUwMi0xMC4wNTYsMTAuMDU2LTEwLjA1Nmg0Mi44MDYNCgljNS41NTQsMCwxMC4wNTYsNC41MDIsMTAuMDU2LDEwLjA1NlYzMjkuODQ0eiBNODYuNzQ4LDEyMy40MzJjLTIyLjQ1OSwwLTQwLjY2Ni0xOC4yMDctNDAuNjY2LTQwLjY2NlM2NC4yODksNDIuMSw4Ni43NDgsNDIuMQ0KCXM0MC42NjYsMTguMjA3LDQwLjY2Niw0MC42NjZTMTA5LjIwOCwxMjMuNDMyLDg2Ljc0OCwxMjMuNDMyeiBNMzQxLjkxLDMzMC42NTRjMCw1LjEwNi00LjE0LDkuMjQ2LTkuMjQ2LDkuMjQ2SDI4Ni43Mw0KCWMtNS4xMDYsMC05LjI0Ni00LjE0LTkuMjQ2LTkuMjQ2di04NC4xNjhjMC0xMi41NTYsMy42ODMtNTUuMDIxLTMyLjgxMy01NS4wMjFjLTI4LjMwOSwwLTM0LjA1MSwyOS4wNjYtMzUuMjA0LDQyLjExdjk3LjA3OQ0KCWMwLDUuMTA2LTQuMTM5LDkuMjQ2LTkuMjQ2LDkuMjQ2aC00NC40MjZjLTUuMTA2LDAtOS4yNDYtNC4xNC05LjI0Ni05LjI0NlYxNDkuNTkzYzAtNS4xMDYsNC4xNC05LjI0Niw5LjI0Ni05LjI0Nmg0NC40MjYNCgljNS4xMDYsMCw5LjI0Niw0LjE0LDkuMjQ2LDkuMjQ2djE1LjY1NWMxMC40OTctMTUuNzUzLDI2LjA5Ny0yNy45MTIsNTkuMzEyLTI3LjkxMmM3My41NTIsMCw3My4xMzEsNjguNzE2LDczLjEzMSwxMDYuNDcyDQoJTDM0MS45MSwzMzAuNjU0TDM0MS45MSwzMzAuNjU0eiIvPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" height="40px" width="40px" alt="Logo2" /></a>
+        <a href="https://stackoverflow.com/users/13827737/latecoder" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjUxMS42MjdweCIgaGVpZ2h0PSI1MTEuNjI3cHgiIHZpZXdCb3g9IjAgMCA1MTEuNjI3IDUxMS42MjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMS42MjcgNTExLjYyNzsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwb2x5Z29uIHBvaW50cz0iMzI0LjkwNywzNDQuODkzIDEyMy45MTMsMzI2LjMzNCAxMTkuOTE2LDM2OS4xNjIgMzIxLjE5NywzODcuNzE3IAkJIi8+DQoJCTxwb2x5Z29uIHBvaW50cz0iMzIwLjA1NSwzOTkuOTk2IDExOC4yMDIsNDAwLjI4MyAxMTguMjAyLDQ0My4zODkgMzIwLjA1NSw0NDMuMTExIAkJIi8+DQoJCTxwb2x5Z29uIHBvaW50cz0iMzYzLjczNCwyMzkuMjU1IDE4OS44NjUsMTM2LjQ3MSAxNjcuODgzLDE3My41ODYgMzQxLjc1MSwyNzYuMzcgCQkiLz4NCgkJPHBvbHlnb24gcG9pbnRzPSIzMzguMzI5LDI4OC4zNjEgMTQzLjMyNywyMzYuMTEyIDEzMi4xOTEsMjc3Ljc5OCAzMjcuMTkzLDMzMC4wNDcgCQkiLz4NCgkJPHBvbHlnb24gcG9pbnRzPSIzNTQuNTk0LDQ3Ny42NTEgODkuNjQ5LDQ3Ny42NTEgODkuNjQ5LDMwMS4yMTIgNTUuMTA0LDMwMS4yMTIgNTUuMTA0LDUxMS4zNCA1NS4zOTEsNTExLjM0IDY1LjM4Niw1MTEuNjI3IA0KCQkJMzg4LjU3Myw1MTEuNjI3IDM4OC41NzMsNTExLjM0IDM4OC44Niw1MDEuMzQ3IDM4OC44NiwzMDEuMjEyIDM1NC41OTQsMzAxLjIxMiAJCSIvPg0KCQk8cG9seWdvbiBwb2ludHM9IjQyMS45OCwwIDM3OS40MzYsNy40MjMgNDEzLjk4OSwyMDYuNDIxIDQ1Ni41MjMsMTk4Ljk5OSAJCSIvPg0KCQk8cG9seWdvbiBwb2ludHM9IjI1Ni45NTgsNjYuNTIyIDM3MC44NzMsMjMzLjI2IDQwNi4yODIsMjA4Ljk5MyAyOTIuNjQzLDQxLjk3MSAJCSIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" height="40px" width="40px" alt="Logo3" /></a>
+            
+    </footer>
+    <script>
+        function chancestyle(){
+            document.getElementById("div1").classList.toggle("div1Turn")
+            document.getElementById("div2").classList.toggle("div2Turn")
+            document.getElementById("div3").classList.toggle("div3Turn")
+            document.getElementById("menu").classList.toggle("vmenu")
+            
+        }
+    </script>
+</body>
+</html>
