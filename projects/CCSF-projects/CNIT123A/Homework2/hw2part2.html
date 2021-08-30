@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Front End, Back End, FullStack, Web development, html, css ,Javascript">
+    <meta name="author" content="Cagatay Ersoy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips and Tricks</title>
+    <meta name="description"
+        content="Tips and tricks learned in Advanced HTML and CSS course at City College of San Francisco">
+    <link rel="stylesheet" href="../../../style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N35Q3D3334"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-N35Q3D3334');
+    </script>
+    <style>
+        header,footer{
+            padding: 1em;
+            text-align: center;
+        }
+        .flex-container {
+            display: flex;
+            background-color: lightgrey;
+            height: auto;
+            
+        }
+
+        .flex-item {
+            background-color: cornflowerblue;
+            width: 100px;
+            height: auto;
+            flex-basis: 100%;
+            padding: 1em;
+            text-align: center;
+
+        }
+
+
+        .flex-item:nth-of-type(1) {
+            flex-grow: 1;
+            order: 1;
+        }
+
+        .flex-item:nth-of-type(2) {
+            flex-grow: 2;
+            order: 3;
+        }
+
+        .flex-item:nth-of-type(3) {
+            flex-grow: 1;
+            order: 2;
+        }
+
+        .flex-item:nth-of-type(4) {
+            flex-grow: 1;
+            order: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="background-color: brown;">
+        <h1>HTML Heading Tag Best Practices for SEO</h1>
+    </header>
+    <div class="flex-container">
+    <div class="flex-item" style="background-color: yellow;">
+        <h1> Start With an H1 Tag
+        </h1>
+        <p>An H1 tag is an HTML tag that designates the heading of a webpage. Place the H1 at the top of your page. It’s
+            essential to make sure your H1 header tag is relevant as the main heading of your entire piece. That’s
+            because H1 tags are most often the most visually distinguishable piece of content on the page. When it comes
+            to content marketing, you must grab attention quickly, and the H1 heading tag can help to do that.
+
+        </p>
+    </div>
+    <div class="flex-item" style="background-color:mediumblue;">
+        <h1> Use Headers to Provide Organization</h1>
+        <p>Header tags bring structure into your content. More specifically, every header needs to give the reader a
+            good idea of the information they can get from the next block of text on the page. Think of your content
+            pieces as stand-alone books. The H1 header is the title and then H2s, H3s…are the subsequent chapters. </p>
+    </div>
+    <div class="flex-item" style="background-color: mediumorchid;">
+        <h1> Use Headers to Break up Text </h1>
+        <p>Readability is a significant factor when it comes to the overall success of the content on your site.
+            Nowadays, readability and scanability are somewhat interchangeable as users opt for easily digestible copy.
+            For example, data shows only 16 percent of people read articles word-for-word. Plan out the formatting of
+            your content so that the heading element lead readers through a quick scan of your writing.</p>
+    </div>
+    <div class="flex-item" style="background-color: pink;">
+        <h1>Add Keywords Into Your Headers </h1>
+        <p>When we say include keywords, we’re not talking about keyword stuffing your headers. Only include your
+            targeted keywords in the header if they are relevant and meaningful to the piece of content directly below.
+            We suggest designing your content for uses and then optimizing for SEO elements after.</p>
+    </div>
+    </div>
+    <footer style="background-color: lime;">
+        <h1>Optimize for Featured Snippets</h1>
+        <p>Header tags are crucial when it comes to optimizing for featured snippets. First of all, optimizing your
+            header tag for a long-tail search keyword then following up with the answer to the query in the text below.
+            Additionally, it can be helpful to use the succeeding, smaller headings to define list items. Google will
+            then go ahead and use these headers in bulleted and numbered lists featured snippet results.</p>
+    </footer>
+</body>
+
+</html>
