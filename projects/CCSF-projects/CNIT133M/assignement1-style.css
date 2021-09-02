@@ -1,0 +1,37 @@
+#as1-main{
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    max-width: max-content;
+    margin: 3em 20em;
+    background-color: #993618;
+    border-radius: 20px;
+    padding: 2em;
+    color: rgb(240, 242, 252);
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+#as1-img{
+    float: left;;
+}
+
+header{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 3em;
+}
+section{
+    margin: 0 3em;
+}
+p:last-child{
+    padding: 50px;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(190, 233, 0);
+
+}
+h3{
+    text-align: center; 
+}
