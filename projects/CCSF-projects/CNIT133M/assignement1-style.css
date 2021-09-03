@@ -20,7 +20,7 @@ header{
     font-family: 'Courier New', Courier, monospace;
     margin-top: 3em;
 }
-section{
+.sections{
     margin: 0 3em;
 }
 p:last-child{
