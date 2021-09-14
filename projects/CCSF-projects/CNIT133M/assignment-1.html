@@ -21,13 +21,36 @@
         gtag('js', new Date());
         gtag('config', 'G-N35Q3D3334');
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <header><h2>CNIT 133M - Mobile Web Dev w/HTML, CSS, JS</h2></header>
+    <script>
+        $(document).ready(function(){
+            $("#animation").click(
+             function(){
+                 var header=$("header");
+                header.animate({fontSize:"40px"},"slow")
+                header.animate({fontSize:"20px"},"slow")
+                header.css("color","blue")
+                $("#picofme").css("border","solid 3px rgb(190, 233, 0")
+                 })
+                 $("#reset").click(
+             function(){
+                 var header=$("header");
+                header.css("color","inherit")
+                $("#picofme").css("border","none")
+                 }) 
+                            
+        })
+ </script>
+    <button id="animation">Start Animation</button><br>
+    <button id="reset">Reset</button>
+    
+    <header>CNIT 133M - Mobile Web Dev w/HTML, CSS, JS</header>
    <div role="main" id="as1-main">
     <div class="sections">
-    <figure id="as1-img"> <img  src="https://i.ibb.co/kHwzf32/me.jpg" alt="me" title="me"> <figcaption> My beloved picture</figcaption></figure>
+    <figure id="as1-img"> <img  src="https://i.ibb.co/kHwzf32/me.jpg" alt="Cagatay close to the bay water in San Francisco with Golden Gate bridge on the background" id="picofme" title="me"> <figcaption> My beloved picture</figcaption></figure>
     <p>My name is Cagatay. I like coding, do you know why? When I see my code is working correctly after long hours
         of work and determination, I feel like Doctor Frankenstein: It's alive, alive!
         I started programming a couple of years ago after a civil engineering career that I didn't enjoy. After
@@ -70,14 +93,7 @@
                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjUxMS42MjdweCIgaGVpZ2h0PSI1MTEuNjI3cHgiIHZpZXdCb3g9IjAgMCA1MTEuNjI3IDUxMS42MjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMS42MjcgNTExLjYyNzsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwb2x5Z29uIHBvaW50cz0iMzI0LjkwNywzNDQuODkzIDEyMy45MTMsMzI2LjMzNCAxMTkuOTE2LDM2OS4xNjIgMzIxLjE5NywzODcuNzE3IAkJIi8+DQoJCTxwb2x5Z29uIHBvaW50cz0iMzIwLjA1NSwzOTkuOTk2IDExOC4yMDIsNDAwLjI4MyAxMTguMjAyLDQ0My4zODkgMzIwLjA1NSw0NDMuMTExIAkJIi8+DQoJCTxwb2x5Z29uIHBvaW50cz0iMzYzLjczNCwyMzkuMjU1IDE4OS44NjUsMTM2LjQ3MSAxNjcuODgzLDE3My41ODYgMzQxLjc1MSwyNzYuMzcgCQkiLz4NCgkJPHBvbHlnb24gcG9pbnRzPSIzMzguMzI5LDI4OC4zNjEgMTQzLjMyNywyMzYuMTEyIDEzMi4xOTEsMjc3Ljc5OCAzMjcuMTkzLDMzMC4wNDcgCQkiLz4NCgkJPHBvbHlnb24gcG9pbnRzPSIzNTQuNTk0LDQ3Ny42NTEgODkuNjQ5LDQ3Ny42NTEgODkuNjQ5LDMwMS4yMTIgNTUuMTA0LDMwMS4yMTIgNTUuMTA0LDUxMS4zNCA1NS4zOTEsNTExLjM0IDY1LjM4Niw1MTEuNjI3IA0KCQkJMzg4LjU3Myw1MTEuNjI3IDM4OC41NzMsNTExLjM0IDM4OC44Niw1MDEuMzQ3IDM4OC44NiwzMDEuMjEyIDM1NC41OTQsMzAxLjIxMiAJCSIvPg0KCQk8cG9seWdvbiBwb2ludHM9IjQyMS45OCwwIDM3OS40MzYsNy40MjMgNDEzLjk4OSwyMDYuNDIxIDQ1Ni41MjMsMTk4Ljk5OSAJCSIvPg0KCQk8cG9seWdvbiBwb2ludHM9IjI1Ni45NTgsNjYuNTIyIDM3MC44NzMsMjMzLjI2IDQwNi4yODIsMjA4Ljk5MyAyOTIuNjQzLDQxLjk3MSAJCSIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K"
                 height="40" width="40" alt="Logo3" /></a>
     </footer>
-    <script>
-        function chancestyle() {
-            document.getElementById("div1").classList.toggle("div1Turn");
-            document.getElementById("div2").classList.toggle("div2Turn");
-            document.getElementById("div3").classList.toggle("div3Turn");
-            document.getElementById("menu").classList.toggle("vmenu");
-        }
-    </script>
+    
 </body>
 
 </html>

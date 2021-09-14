@@ -143,11 +143,9 @@ main>div>img {
 }
 
 footer {
-    display: block;
     left: 0;
     bottom: 0;
-    width: 100%;
-    position: fixed;
+    width: 100%; 
     min-height: fit-content;
     padding: 1em;
     display: inline-block;
