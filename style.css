@@ -145,11 +145,14 @@ main>div>img {
 footer {
     left: 0;
     bottom: 0;
+    position:absolute;
+    
     width: 100%; 
     min-height: fit-content;
     padding: 1em;
     display: inline-block;
     margin-right: 2em;
+    margin-top: 2em;
     text-align: center;
     font-family: 'Rampart One', cursive
 }
