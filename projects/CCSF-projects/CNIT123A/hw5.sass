@@ -1,0 +1,58 @@
+@use "sass:math"
+$color1:#eecccc 
+$color2: #2f2828 
+@function calculate-rem($size) 
+    $rem-size: math.div($size, 16px)
+    @return #{$rem-size}rem
+
+@mixin wraper-mixin($width:100%, $background-color: $color1, $font-size) 
+    width: $width
+    background-color:$background-color
+    font-size: $font-size
+.wrapper 
+  +wraper-mixin($font-size: calculate-rem(19.2px))
+
+.header 
+  width: 100%
+  h1
+    font-size: calculate-rem(40px)
+    color: #2f2828
+
+.nav 
+   width:100%
+   background-color: #fbf4f4
+   font-size: calculate-rem(16px)
+   padding: calculate-rem(3.2px)
+   ul 
+    li
+      display: inline-block
+      width: 10rem
+      margin-right: calculate-rem(3.2px)
+      border-radius: 5px
+      border: 1px solid transparent
+      background-color: $color1
+      color: $color2
+
+@mixin col( $width, $background-color, $color, $float:left)
+    width:$width
+    background-color: $background-color
+    color: $color
+    float: $float
+
+.col1 
+  +col($width: 50% , $background-color: $color2 ,$color: $color1)
+  
+
+.col2 
+    +col($width: 25% , $background-color: $color1 , $color: $color2)
+    h2 
+     color: black
+
+.col3 
+  +col($width: 25% , $background-color: $color2, $color:$color1 )
+  
+
+.footer 
+  +wraper-mixin($font-size: calculate-rem(14.4px))
+
+  

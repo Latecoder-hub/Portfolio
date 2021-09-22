@@ -23,7 +23,7 @@
     </script>
      <script>
        function organizer(){
-            $("h1").after("<ul></ul>" )
+            $("h1").after("<ul></ul>")
             $("h2").each(function(index,element){
                 $(element).attr("id","h"+index)
                 $("h1+ul").append("<li><a href=#h"+index+">"+element.textContent+"</a></li>")
