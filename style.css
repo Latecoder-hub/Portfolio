@@ -145,7 +145,7 @@ main>div>img {
 footer {
     left: 0;
     bottom: 0;
-    position:absolute;
+    position:static;
     
     width: 100%; 
     min-height: fit-content;
