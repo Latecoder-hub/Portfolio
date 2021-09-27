@@ -109,7 +109,6 @@ body {
 .vmenu {
     width: 100% !important
 }
-
 main {
     justify-content: center;
     width: 100%;
@@ -122,11 +121,7 @@ main {
     margin-top: 8vw
 }
 
-main>div>img {
-    float: left;
-    margin-left: 1em;
-    border-radius: 25em
-}
+
 
 #name {
     padding-top: .5em
@@ -138,9 +133,6 @@ main>div>img {
     display: table
 }
 
-#writing-with-animation {
-    margin-top: .5em
-}
 
 footer {
     left: 0;
